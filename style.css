@@ -1,7 +1,12 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -28,6 +33,16 @@ nav ul li a {
 
 main {
     padding: 2em;
+}
+
+.picture-container {
+    contain-intrinsic-height: 700px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    box-sizing: border-box;
+    filter: brightness(0.5);
+    animation-delay: 12s;
 }
 
 h1,
@@ -75,6 +90,170 @@ button:hover {
     background-color: #555;
 }
 
-.image1 {
-    margin-right: 20px;
+.my-butten {
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+    border: rgb(27, 27, 27);
+    margin-left: 314px;
+}
+
+.picture-container {
+    contain-intrinsic-height: 700px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    box-sizing: border-box;
+    filter: brightness(0.5);
+}
+
+.picture-container img {
+    width: 1350px;
+    height: 800px;
+    position: absolute;
+    top: -54px;
+    left: 0px;
+    opacity: -3;
+    animation: fade 9s infinite;
+    animation-duration: 9s;
+}
+
+.picture-container img:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.picture-container img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.picture-container img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.picture-container img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.picture-container img:nth-child(5) {
+    animation-delay: 12s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.containerr {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    /* Ensures the text appears above the image */
+    color: white;
+}
+
+.overlay-text h1 {
+    font-size: 56px;
+    margin-top: -300px;
+    color: #ffffff69;
+}
+
+.overlay-text p {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: rgba(245, 247, 239, 0.418);
+}
+
+.containerr {
+    position: relative;
+    width: 100%;
+}
+
+.image-right {
+    float: right;
+    margin-right: 70px;
+    margin-top: 60px;
+    width: 450px;
+    height: 450px;
+    box-shadow: -20px 19px 11px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-left {
+    float: left;
+    margin-right: 70px;
+    margin-top: 60px;
+    width: 450px;
+    height: 450px;
+    margin-top: 160px;
+    margin-left: 70px;
+    box-shadow: 20px 20px 8px 20px rgba(15, 15, 15, 0.418);
+}
+
+.image-right-1 {
+    float: right;
+    margin-right: 70px;
+    margin-top: 120px;
+    width: 450px;
+    height: 450px;
+    box-shadow: -20px 19px 11px 20px rgba(0, 0, 0, 0.1);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content,
+.footer-social {
+    margin-bottom: 10px;
+}
+
+.footer-nav a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
 }
